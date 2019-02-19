@@ -1,11 +1,11 @@
 let jogo=[];
 let tabuleiro=[];
-let turnoJogador=0; // let quemJoga
+let turnoJogador=0; 
 let verifica;
 let jogando=true;
 let nivel=1;
-let turnoCpu=1;  // let jodadaDaCpu
-let quemInicia=0;  // let quemComeca
+let turnoCpu=1;  
+let quemInicia=0;  
 
 function verificarVitoria(){
     let resultado = "";
@@ -32,29 +32,11 @@ function verificarVitoria(){
         return jogo[0][2];
     }
  
-    //Verifica se foi empate
-    if(resultado == ""){
-     let campos_ocupados = 0;
- 
-     for(let l=0;l<3;l++){ //Linha
-      for(let l=0;l<3;l++){ //Coluna
-       if(jogo[l][c] != ""){
-        campos_ocupados++;
-       }
-      }
-     }
-     if(campos_ocupados == 9){
-      resultado = "V";
-     }
-    }
-    return resultado;
-   }
- 
-   
+    
 
 
 
-function jogadaDaCpu(){  //cpuJoga
+function jogadaDaCpu(){  
     if(jogando){
         let l,c;
         if(nivel==1){
@@ -142,7 +124,7 @@ function jogar(p){
             alert(verifica+" venceu");
             jogando=false;
         }
-        jogadaDaCpu(); //cpuJoga
+        jogadaDaCpu(); 
         }
     }
 }
@@ -188,9 +170,10 @@ function iniciar(){
             quemInicia=1;
             quemJoga=quemInicia;
             document.getElementById("dvQuemComeca").innerHTML="Quem começa: CPU";
-            jogadaDaCpu(); //cpuJoga
+            jogadaDaCpu(); 
             
         }
     }
 
-    window.addEventListener("load",iniciar);
+    window.addEventListener("load",iniciar());
+    

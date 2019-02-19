@@ -1,3 +1,96 @@
+body {
+    margin: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-areas: 'header header header '
+                         'section section section '
+                         'aside aside aside '
+                         'footer footer footer ';
+    grid-auto-rows: 5vh 100vh 30vh 40vh;              
+    grid-column-gap: 10px;
+}
+
+nav {
+	display: grid;
+	height: 200px;
+	grid-template-rows: 25% auto;
+	background-color: tomato
+}
+
+.hamburger img {
+	width: 50px;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.links a {
+	margin: 5px 0;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.esconde-menu {
+	height: 55px;
+	transition: 0.5s;
+}
+
+.esconde-menu .links {
+	transform: translateY(-130%);
+}
+
+
+
+header {
+    display: flex;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:black;
+    height: 50vw;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30pt;
+    color: white;
+}
+
+button {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    text-align: center;
+    font-size: 14pt;
+    color: white;
+}
+
+span2 {
+    color: red;
+}
+
+span1 {
+    color: green;
+}
+
+section {
+    display: flex;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 
 .tabuleiro {
@@ -27,41 +120,50 @@
 #a1 {
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
+    background-color: blue;
 }
 #a2 {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
+    background-color: green;
 }
 #a3 {
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
+    background-color: yellow;
 }
 
 #b1 {
     border-top: 1px solid #000;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;    
+    background-color: red;
 }
 #b2 {
     border: 1px solid #000;    
+    background-color: black;
 }
 #b3 {
     border-left: 1px solid #000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    background-color: whitesmoke;
 }
 
 #c1 {
     border-right: 1px solid #000;
     border-top: 1px solid #000;
+    background-color: purple;
 }
 #c2 {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     border-top: 1px solid #000;
+    background-color: burlywood;
 }
 #c3 {
     border-left: 1px solid #000;
     border-top: 1px solid #000;
+    background-color: goldenrod;
 }
